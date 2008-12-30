@@ -16,9 +16,11 @@
           .yui-b
             .main_content
               = yield :layout
+              .clear
         .yui-b
           .sidebar
             = link_to "New Paste", new_paste_path, :class => "new_paste"
             = yield :sidebar
     
     = render :partial => "shared/bottom_javascript"
+    

@@ -4,6 +4,8 @@ html {
 .mbx h1, .mbx h2, .mbx h3, .mbx h4, .mbx h5, .mbx h6 {
   font-weight: bold;
   margin-bottom: 0.5em; }
+.mbx .clear {
+  clear: both; }
 .mbx .paste_tools {
   margin-top: 2em; }
   .mbx .paste_tools h3 {
