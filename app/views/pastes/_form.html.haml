@@ -1,0 +1,13 @@
+- form_for(@paste) do |f|
+  = f.error_messages
+  %p
+    = f.label :content
+    = f.text_area :content
+  %p
+    = f.label :title
+    = f.text_field :title
+  %p
+    = f.label :language
+    = f.select :language_id, Language.find(:all).collect { |l| [ l.name, l.id ]}
+  %p
+    = f.submit "Create"

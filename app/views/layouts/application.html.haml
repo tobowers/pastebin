@@ -1,0 +1,20 @@
+!!!
+%html{:xmlns=>"http://www.w3.org/1999/xhtml"}
+  %head
+    = javascript_include_tag :all
+    = render_bundled_stylesheet_link_tags_for_dev
+ 
+    = yield :head
+    
+  %body.mbx
+    #doc3{:class => "pastebin yui-t7 #{params[:controller]} #{params[:action]}"}
+      #bd.bd
+        #yui-main
+          .yui-b
+            .main_content
+              = yield :layout
+        .yui-b
+          .sidebar
+            = yield :sidebar
+    
+    = render :partial => "shared/bottom_javascript"
