@@ -1,0 +1,11 @@
+.mbx form p {
+  margin-bottom: 1em; }
+.mbx form label {
+  display: block;
+  font-weight: bold; }
+.mbx form textarea {
+  width: 100%; }
+.mbx form .submit {
+  font-weight: bold;
+  font-size: 167%;
+  float: right; }

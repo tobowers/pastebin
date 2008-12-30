@@ -1,13 +1,17 @@
 - form_for(@paste) do |f|
   = f.error_messages
+  = f.submit "Create", :class => "submit top"
   %p
-    = f.label :content
-    = f.text_area :content
-  %p
-    = f.label :title
+    = f.label "Title (optional)"
     = f.text_field :title
+  
   %p
     = f.label :language
     = f.select :language_id, Language.find(:all).collect { |l| [ l.name, l.id ]}
+  
   %p
-    = f.submit "Create"
+    = f.label :content
+    = f.text_area :content
+  
+  %p
+    = f.submit "Create", :class => "submit"

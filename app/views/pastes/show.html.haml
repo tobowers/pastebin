@@ -1,0 +1,18 @@
+- content_for :sidebar do
+  .paste_tools
+    - if !@paste.title.empty?
+      %h3
+        Title
+      %p
+        = h @paste.title
+    %h3
+      Language
+    %p
+      = @paste.language.name
+    
+    = link_to 'Edit this paste', edit_paste_path(@paste), :class => "edit"
+    
+
+~ Uv.parse(@paste.content, "xhtml", @paste.language.name, "true", "sunburst")
+
+

@@ -1,0 +1,36 @@
+.mbx {
+  background-color: #0F4279; }
+  .mbx h1, .mbx h2, .mbx h3, .mbx h4, .mbx h5, .mbx h6 {
+    font-weight: bold;
+    margin-bottom: 0.5em; }
+  .mbx .paste_tools {
+    margin-top: 2em; }
+    .mbx .paste_tools h3 {
+      font-weight: 131%; }
+  .mbx h1 {
+    font-size: 153.9%;
+    color: white; }
+  .mbx h2 {
+    font-size: 123.1%; }
+  .mbx table th, .mbx table td {
+    padding: 1em 1em 1em 0; }
+  .mbx table th {
+    text-align: left;
+    font-weight: bold; }
+  .mbx #hd, .mbx .main_content, .mbx .sidebar {
+    padding: 0.5em; }
+  .mbx .main_content {
+    background-color: white;
+    padding-left: 2em;
+    padding-right: 2em; }
+  .mbx .sidebar {
+    color: white;
+    min-height: 400px; }
+    .mbx .sidebar a {
+      color: white;
+      font-weight: bold; }
+    .mbx .sidebar a.new_paste {
+      font-size: 153.9%; }
+    .mbx .sidebar a.edit {
+      display: block;
+      margin-top: 2em; }

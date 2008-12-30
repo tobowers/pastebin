@@ -7,7 +7,10 @@
     = yield :head
     
   %body.mbx
-    #doc3{:class => "pastebin yui-t7 #{params[:controller]} #{params[:action]}"}
+    #doc3{:class => "pastebin yui-t5 #{params[:controller]} #{params[:action]}"}
+      #hd
+        %h1
+          Pastebin
       #bd.bd
         #yui-main
           .yui-b
@@ -15,6 +18,7 @@
               = yield :layout
         .yui-b
           .sidebar
+            = link_to "New Paste", new_paste_path, :class => "new_paste"
             = yield :sidebar
     
     = render :partial => "shared/bottom_javascript"

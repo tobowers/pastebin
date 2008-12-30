@@ -1,0 +1,21 @@
+%h2
+  Last
+  = @pastes.size
+  Pastes
+
+%table
+  %tr
+    %th
+      Title
+    %th
+      Language
+
+  - @pastes.each do |paste|
+    %tr
+      %td
+        = link_to h(paste.title), paste    
+      %td
+        = h paste.language.name
+      %td
+        = link_to 'Edit', edit_paste_path(paste)
+        = link_to 'Destroy', paste, :confirm => 'Are you sure?', :method => :delete
