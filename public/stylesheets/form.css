@@ -4,7 +4,8 @@
   display: block;
   font-weight: bold; }
 .mbx form textarea {
-  width: 100%; }
+  width: 100%;
+  font-family: "Courier New", Courier, monospace; }
 .mbx form .submit {
   cursor: pointer;
   font-weight: bold;

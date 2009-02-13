@@ -11,8 +11,10 @@
       = @paste.language.name
     
     = link_to 'Edit this paste', edit_paste_path(@paste), :class => "edit"
+    %br
+    = link_to 'Destroy paste', @paste, :confirm => 'Are you sure?', :method => :delete
     
-
-~ Uv.parse(@paste.content, "xhtml", @paste.language.name, "true", "sunburst")
+.paste
+  ~ Uv.parse(@paste.content, "xhtml", @paste.language.name, "true", "sunburst")
 
 

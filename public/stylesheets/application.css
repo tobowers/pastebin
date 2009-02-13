@@ -31,6 +31,10 @@ html {
   background-color: white;
   padding-left: 2em;
   padding-right: 2em; }
+  .mbx .main_content .paste {
+    background-color: black;
+    font-family: "Courier New", Courier, monospace;
+    overflow: auto; }
 .mbx .sidebar {
   color: white;
   min-height: 400px; }

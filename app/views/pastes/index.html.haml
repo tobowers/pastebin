@@ -13,7 +13,7 @@
   - @pastes.each do |paste|
     %tr
       %td
-        = link_to h(paste.title), paste    
+        = link_to h((paste.title.empty? ? "link" : paste.title)), paste    
       %td
         = h paste.language.name
       %td
